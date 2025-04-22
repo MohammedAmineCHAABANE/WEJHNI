@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEJHNI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/Wejhni.png" type="image/icon type">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body style="background: #f1f1f1;">
+  <!-- debut navbare  -->
+  <nav class="navbar navbar-expand-md navbar-dark ">
+    <div class="dual-collapse1">
+      <b> <a class="navbar-brand mx-auto" href="index.html"><img src="img/logo.png" width="55"> </a></b>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 ">
+      <ul class="navbar-nav ml-auto itme-end">
+        <li class="nav-item">
+          <b><a class="nav-link active" href="index.html">ACCUEIL</a></b>
+        </li>
+        <li class="nav-item dropdown">
+          <b><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true"
+              aria-expanded="false" href="information.html">
+              INFORMATION
+            </a></b>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <b> <a class="nav-link" href="#" style="cursor: default">Tronc communs</a></b>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="troncRegu" onclick="afficher(this)">Troncs communs réguliers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="troncPro" onclick="afficher(this)">Troncs communs
+                        Professionnel</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="troncInter" onclick="afficher(this)">Troncs communs
+                        International</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.col-md-4  -->
+                <div class="col-md-4">
+
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <b> <a class="nav-link" href="#" style="cursor: default">Cycle baccalauréat</a></b>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="bacRegu" onclick="afficher(this)">Cycle baccalauréat
+                        réguliers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="bacPro" onclick="afficher(this)">Cycle baccalauréat
+                        Professionnel</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="bacInter" onclick="afficher(this)">Cycle baccalauréat
+                        International</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.col-md-4  -->
+                <div class="col-md-4">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <b> <a class="nav-link" href="#" style="cursor: default">Après le baccalauréat</a></b>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="secteurPublic" onclick="afficher(this)">Secteur Public</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="secteurPrivee" onclick="afficher(this)">Secteur Privée</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="secteurSemiPublic" onclick="afficher(this)">Secteur
+                        semi-public</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-12">
+                  <hr>
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <center><b><a class="nav-link" href="information.html">Tout les informations</a></b></center>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.col-md-4  -->
+              </div>
+            </div>
+            <!--  /.container  -->
+          </div>
+        </li>
+        <li class="nav-item">
+          <b> <a class="nav-link" href="horizon.html">HORIZON</a></b>
+        </li>
+        <li class="nav-item">
+          <b> <a class="nav-link" href="test.html">TEST</a></b>
+        </li>
+        <li class="nav-item">
+          <b> <a class="nav-link" href="apropos.html">A PROPOS</a></b>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fin navbare  -->
+  <!-- Chatbot -->
+  <div onclick="funChatbot()">
+    <div class="thought"> <img src="img/Wejhni.png" width="30"> </div>
+  </div>
+  <div class=" main-container">
+    <div id="chatB">
+      <iframe src="https://powerva.microsoft.com/webchat/bots/c90bec33-ee01-4a24-9058-5366d0eefb39"
+        frameborder="0"></iframe>
+    </div>
+
+    <div class="border border-light p-3 mb-4 margTop">
+      <blockquote id="pro" style="text-align: center;"></blockquote><br>
+      <div class="text-center">
+
+        <button onclick="location.href = 'quiz.html';" type="button" class="btnStyle">Commencer le TEST !</button> <br>
+        <br>
+        <i>
+          <p>C’est gratuit !</p>
+        </i>
+        <p class="animate__animated animate__backInUp">On vous recommande de répondre le plus spontanément et le plus
+          honnêtement possible.</p>
+
+      </div>
+    </div>
+    <!-- background -->
+    <img src="img/form.png" class="bgImage">
+    <!-- debut footer  -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 box">
+            <img src="img/Wejhni.png" width="70">
+          </div>
+          <div class="col-md-4 box">
+            <span class=" quick-links">Copyright &copy; Wejhni
+              <script>document.write(new Date().getFullYear())</script>
+            </span>
+          </div>
+          <div class="col-md-4 box">
+            <p>SUIVEZ-NOUS SUR LES RESEAUX SOCIAUX</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- fin footer  -->
+  </div>
+  <!-- function pour Prendre ID de la formation qui se trouve dans menu et stocké dans localStorage et dirégi cere la page horizon  -->
+  <script src="js/locationHorizon.js"></script>
+  <!-- drop down Menu  -->
+  <script src="js/dropdownMenu.js"></script>
+  <!-- quotes  -->
+  <script src="js/quotes.js"></script>
+  <!-- chatBot -->
+  <script src="js/chatBot.js"></script>
+</body>
+
+</html>

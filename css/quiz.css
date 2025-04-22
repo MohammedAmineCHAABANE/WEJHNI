@@ -1,0 +1,122 @@
+#title {
+  text-decoration: underline;
+}
+
+#quiz {
+  text-indent: 10px;
+  display: none;
+}
+
+.btnNext {
+
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  float: right;
+  background-color: #0055A6;
+  margin: 0 2px 0 2px;
+  padding: 4px 20px;
+}
+
+.btnPrev {
+  border: 2px solid #0055A6;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  float: right;
+  margin: 0 2px 10px 2px;
+  padding: 4px 13px;
+}
+
+.btnNext.active,
+.btnPrev.active {
+  background-color: #F8F8FF;
+  color: #525252;
+}
+
+
+
+.btnNext a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.btnPrev a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#container {
+  width: 70%;
+  margin: auto;
+  padding: 0 25px 40px 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 1px 2px 2px #cacaca;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#prev {
+  display: none;
+}
+
+.start {
+  display: none;
+}
+
+.titleQues {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding: 0px 45px;
+}
+
+.validTest {
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.divText {
+  width: 60%;
+
+}
+
+@media (max-width: 455px) {
+  #container {
+    width: 100%;
+  }
+
+  .titleQues {
+    padding: 0;
+  }
+}
+
+.circle {
+  width: 200px;
+  margin: 6px 20px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+
+strong {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 43px;
+
+}
